@@ -14,6 +14,6 @@ char *ft_strdup(const char *s1)
         copy[i] = s1[i];
         i++;
     }
-//    copy[i] = '\0'; do I need this line?
+    copy[i] = '\0';
     return (copy);
 }

@@ -4,22 +4,23 @@ int ft_atoi(const char *str)
 {
     int result;
     int sign;
+    //
+    int i;
     
     result = 0;
     sign = 1;
-    while (*str == 32 || (*str >= 9 && *str <= 13))
-        str++;
-    if (*str == 43)
-        str++;
-    else if (*str == 45)
+    //
+    i = 0;
+    while (str[i] == 32 || (str[i] >= 9 && str[i] <= 13))
+        i++;
+    if (str[i] == 43)
+        i++;
+    else if (str[i] == 45)
     {
         sign = -1;
-        str++;
+        i++;
     }
-    while (*str >= 48 && *str <= 57)
-    {
-        result = result * 10 + (*str - '0');
-        str++;
-    }
+    while (ft_isdigit(str[i]))
+        result = result * 10 + (str[i++] - '0');
     return (result * sign);
 }

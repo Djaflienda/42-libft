@@ -6,7 +6,7 @@
 
 // main libft functions = 28 items
 int ft_atoi(const char *str);
-void *ft_bzero(void *s, size_t n);
+void ft_bzero(void *s, size_t n);
 int ft_isalnum(int c);
 int ft_isalpha(int c);
 int ft_isascii(int c);
@@ -46,26 +46,18 @@ void ft_strdel(char **as);
 void ft_strclr(char *s);
 void ft_striter(char *s, void (*f)(char *));
 void ft_striteri(char *s, void (*f)(unsigned int, char *));
-map
-mapi
+
 int ft_strequ(char const *s1, char const *s2);
 int ft_strnequ(char const *s1, char const *s2, size_t n);
 char *ft_strsub(char const *s, unsigned int start, size_t len);
-
-
+char *ft_strtrim(char const *s);
+char *ft_strjoin(char const *s1, char const *s2);
+void ft_putendl_fd(char const *s, int fd);
+void ft_putendl(char const *s);
 
 //my additional functions
 int ft_islower(int c);
 int ft_isupper(int c);
-
-
-
-
-ft_isupper
-ft_islower
-
-
-
 
 size_t ft_strlen(const char *s);
 

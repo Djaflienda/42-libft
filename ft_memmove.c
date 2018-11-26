@@ -10,11 +10,8 @@ void *ft_memmove(void *dst, const void *src, size_t len)
     srcPointer = src;
     i = 0;
     if (srcPointer < dstPointer)
-        while ((int)len >= 0)
-        {
+        while ((int)--len >= 0)
             dstPointer[len] = srcPointer[len];
-            len--;
-        }
     else
     {
         while (i < len)
