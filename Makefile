@@ -1,7 +1,7 @@
 
 COMPILE_FLAG = -Wall -Wextra -Werror -I. -c
 NAME = libft.a
-FILES = 	ft_strlen.c \
+FILES = 		ft_strlen.c \
 			ft_atoi.c \
 			ft_isalnum.c \
 			ft_isalpha.c \
@@ -39,18 +39,20 @@ FILES = 	ft_strlen.c \
 			ft_striter.c \
 			ft_striteri.c \
 			ft_strjoin.c \
-			ft_islower.c \
-			ft_isupper.c \
 			ft_strsub.c \
 			ft_putchar_fd.c \
 			ft_putchar.c \
 			ft_putstr_fd.c \
 			ft_putstr.c \
 			ft_strtrim.c \
-			ft_strjoin.c \
-			ft_strjoin.c \
 			ft_putendl_fd.c \
-			ft_putendl.c
+			ft_putendl.c \
+			ft_putnbr_fd.c \
+			ft_putnbr.c \
+			ft_strmap.c \
+			ft_strmapi.c \
+			ft_itoa.c \
+			ft_strsplit.c
 
 OBJ	= $(FILES:%.c=%.o)
 
