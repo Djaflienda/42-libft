@@ -18,7 +18,7 @@ char *ft_strtrim(char const *s)
     len = ft_strlen(s) - 1;
     while (s[len] == ' ' || s[len] == '\n' || s[len] == '\t')
         len--;
-    copy = malloc(sizeof(char) * (len - i + 2));
+    copy = (char *)malloc(sizeof(char) * (len - i + 2));
     if (!copy)
         return (NULL);
     while (i <= len)
