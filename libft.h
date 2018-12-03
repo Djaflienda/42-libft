@@ -1,10 +1,21 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   libft.h                                            :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
+/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #ifndef LIBFT_H
 # define LIBFT_H
 # include <string.h>
 # include <unistd.h>
 # include <stdlib.h>
 
-// main libft functions = 28 items
 int ft_atoi(const char *str);
 void ft_bzero(void *s, size_t n);
 int ft_isalnum(int c);
@@ -34,7 +45,6 @@ char *ft_strstr(const char *haystack, const char *needle);
 void *ft_memmove(void *dst, const void *src, size_t len);
 size_t ft_strlcat(char *dst, const char *src, size_t dstsize);
 
-//libft additional functions = 23 items
 void ft_putchar_fd(char c, int fd);
 void ft_putchar(char c);
 void ft_putstr_fd(char const *s, int fd);
@@ -73,4 +83,10 @@ void ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void ft_lstadd(t_list **alst, t_list *new);
 void ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+
+int ft_isupper(int c);
+int ft_islower(int c);
+size_t ft_intlen(int n);
+char *ft_strndup(const char *s, size_t n);
+
 #endif

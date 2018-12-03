@@ -58,19 +58,16 @@ FILES = 		ft_strlen.c \
 			ft_lstdel.c \
 			ft_lstadd.c \
 			ft_lstiter.c \
-			ft_lstmap.c
+			ft_isupper.c \
+			ft_islower.c \
+			ft_intlen.c \
+			ft_strndup.c
 
 OBJ	= $(FILES:%.c=%.o)
 
 
 
 all: $(NAME)
-
-# copy:
-# 	cp -f libc-funcs/*.c .
-# 	cp -f additional-funcs/*.c .
-# 	cp -f bonus-funcs/*.c .
-# 	cp -f personal-funcs/*.c .
 
 
 $(NAME): $(OBJ)
