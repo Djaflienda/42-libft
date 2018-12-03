@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 15:46:15 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 15:46:22 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char *ft_strcat(char *s1, const char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
-    return (ft_strncat(s1, s2, ft_strlen(s2)));
+	return (ft_strncat(s1, s2, ft_strlen(s2)));
 }

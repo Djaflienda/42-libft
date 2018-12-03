@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 15:42:23 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 15:42:31 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void ft_putendl_fd(char const *s, int fd)
+void	ft_putendl_fd(char const *s, int fd)
 {
-    ft_putstr_fd(ft_strjoin(s, "\n"), fd);
+	ft_putstr_fd(ft_strjoin(s, "\n"), fd);
 }

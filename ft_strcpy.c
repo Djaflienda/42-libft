@@ -5,23 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 15:51:10 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 15:51:35 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char *ft_strcpy(char *dst, const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
-    int i;
-    
-    i = 0;
-    while (src[i] != '\0')
-    {
-        dst[i] = src[i];
-        i++;
-    }
-    dst[i] = '\0';
-    return (dst);
+	int i;
+
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dst[i] = src[i];
+		i++;
+	}
+	dst[i] = '\0';
+	return (dst);
 }

@@ -5,17 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 15:36:00 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 15:36:17 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void ft_memdel(void **ap)
+void	ft_memdel(void **ap)
 {
-    if (!ap || !*ap)
-        return ;
-    free(*ap);
-    *ap = NULL;
+	if (!ap || !*ap)
+		return ;
+	free(*ap);
+	*ap = NULL;
 }

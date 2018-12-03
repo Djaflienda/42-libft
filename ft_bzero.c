@@ -5,23 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 15:11:08 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 15:11:48 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void ft_bzero(void *s, size_t n)
+void		ft_bzero(void *s, size_t n)
 {
-    char *ptr;
-    size_t i;
-    
-    ptr = s;
-    i = 0;
-    while (i < n)
-    {
-        ptr[i] = '\0';
-        i++;
-    }
+	char	*ptr;
+	size_t	i;
+
+	ptr = s;
+	i = 0;
+	while (i < n)
+	{
+		ptr[i] = '\0';
+		i++;
+	}
 }

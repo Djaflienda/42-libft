@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 15:45:48 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 15:45:55 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void ft_putstr(char const *s)
+void	ft_putstr(char const *s)
 {
-    ft_putstr_fd(s, 1);
+	ft_putstr_fd(s, 1);
 }

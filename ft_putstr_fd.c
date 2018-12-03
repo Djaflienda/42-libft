@@ -5,20 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 15:45:11 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 15:45:29 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void ft_putstr_fd(char const *s, int fd)
+void	ft_putstr_fd(char const *s, int fd)
 {
-    int i;
+	int i;
 
-    i = 0;
-    if (!s)
-        return ;
-    while (s[i] != '\0')
-        ft_putchar_fd(s[i++], fd);
+	i = 0;
+	if (!s)
+		return ;
+	while (s[i] != '\0')
+		ft_putchar_fd(s[i++], fd);
 }

@@ -5,20 +5,20 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 16:36:27 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 16:37:01 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_striteri(char *s, void (*f)(unsigned int, char *))
+void				ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-    unsigned int i;
+	unsigned int	i;
 
-    i = 0;
-    if (s && f)
-        while (s[i] != '\0')
-        {
-            f(i, &s[i]);
-            i++;
-        }
+	i = 0;
+	if (s && f)
+		while (s[i] != '\0')
+		{
+			f(i, &s[i]);
+			i++;
+		}
 }

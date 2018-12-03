@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 15:51:49 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 15:51:57 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-void ft_strdel(char **as)
+void	ft_strdel(char **as)
 {
-    ft_memdel((void **)as);
+	ft_memdel((void **)as);
 }

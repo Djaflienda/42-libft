@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 15:54:07 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 15:54:24 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void ft_striter(char *s, void (*f)(char *))
+void	ft_striter(char *s, void (*f)(char *))
 {
-    if (s && f)
-        while (*s)
-            f(s++);
+	if (s && f)
+		while (*s)
+			f(s++);
 }

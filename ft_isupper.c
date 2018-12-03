@@ -5,12 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/11/30 17:58:07 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 16:31:27 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 16:31:37 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int ft_isupper(int c)
+int		ft_isupper(int c)
 {
-    return (c >= 'A' && c <= 'Z');
+	return (c >= 'A' && c <= 'Z');
 }
