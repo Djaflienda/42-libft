@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,26 +12,24 @@
 
 #include <libft.h>
 
-int ft_strncmp(const char *s1, const char *s2, size_t n)
+t_list *ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-//    size_t i;
-//
-//    i = 0;
-//    if (n == 0)
-//        return (0);
-//    while (n > 0 && s1[i] != '\0' && s1[i] == s2[i])
-//    {
-//        i++;
-//        n--;
-//    }
-//    return (*((unsigned char *)&s1[i]) - *((unsigned char *)&s2[i]));
+    t_list *new;
+    t_list *list;
     
-    
-    while (n && *s1 && (*s1 == *s2))
+    if (!lst)
+        return (NULL);
+    list = f(lst);
+    new = list;
+    while (lst->next)
     {
-        s1++;
-        s2++;
-        n--;
+        lst = lst->next;
+        if (!(list->next = f(lst)))
+        {
+            free(list->next);
+            return (NULL);
+        }
+        list = list->next;
     }
-    return (n) ? (*(const unsigned char *)s1 - *(const unsigned char *)s2) : 0;
+    return (new);
 }

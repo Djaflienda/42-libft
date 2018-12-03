@@ -61,7 +61,8 @@ FILES = 		ft_strlen.c \
 			ft_isupper.c \
 			ft_islower.c \
 			ft_intlen.c \
-			ft_strndup.c
+			ft_strndup.c \
+			ft_lstmap.c
 
 OBJ	= $(FILES:%.c=%.o)
 
@@ -69,14 +70,25 @@ OBJ	= $(FILES:%.c=%.o)
 
 all: $(NAME)
 
+copy:
+	cp -f libc-funcs/*.c .
+	cp -f additional-funcs/*.c .
+	cp -f bonus-funcs/*.c .
+	cp -f personal-funcs/*.c .
+
 
 $(NAME): $(OBJ)
-		@ar rcs $(NAME) $(OBJ)
+		ar rcs $(NAME) $(OBJ)
 
 $(OBJ): $(FILES)
-		@gcc $(COMPILE_FLAG) $(FILES)
+		gcc $(COMPILE_FLAG) $(FILES)
 
-clear:
-		rm *.o
+clean:
+		rm -f $(OBJ)
+
+fclean: clean
+		rm -f $(NAME)
+
+re: fclean all
 
 .PHONY: clean fclean all re
