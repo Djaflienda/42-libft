@@ -6,7 +6,7 @@
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/30 17:57:25 by kschroed          #+#    #+#             */
-/*   Updated: 2018/12/03 16:27:07 by kschroed         ###   ########.fr       */
+/*   Updated: 2018/12/03 17:02:47 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -89,5 +89,6 @@ int					ft_isupper(int c);
 int					ft_islower(int c);
 size_t				ft_intlen(int n);
 char				*ft_strndup(const char *s, size_t n);
+int					ft_define_words_count(char const *s, char c);
 
 #endif

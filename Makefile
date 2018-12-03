@@ -62,7 +62,8 @@ FILES = 		ft_strlen.c \
 			ft_islower.c \
 			ft_intlen.c \
 			ft_strndup.c \
-			ft_lstmap.c
+			ft_lstmap.c \
+			ft_define_words_count.c
 
 OBJ	= $(FILES:%.c=%.o)
 

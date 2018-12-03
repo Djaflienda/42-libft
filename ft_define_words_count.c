@@ -1,41 +1,30 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strsplit.c                                      :+:      :+:    :+:   */
+/*   ft_define_words_count.c                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kschroed <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/12/03 16:10:40 by kschroed          #+#    #+#             */
-/*   Updated: 2018/12/03 17:04:25 by kschroed         ###   ########.fr       */
+/*   Created: 2018/12/03 17:03:00 by kschroed          #+#    #+#             */
+/*   Updated: 2018/12/03 17:04:02 by kschroed         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
-
-char		**ft_strsplit(char const *s, char c)
+int		ft_define_words_count(char const *s, char c)
 {
-	int		i;
-	int		j;
-	int		k;
-	char	**res;
+	int	i;
+	int	counter;
 
-	if (!s || !c)
-		return (NULL);
-	if (!(res = (char **)malloc(sizeof(char *)\
-					* (ft_define_words_count(s, c) + 1))))
-		return (NULL);
 	i = 0;
-	k = 0;
-	while (s[i] != '\0')
+	counter = 0;
+	while (s[i])
 	{
 		while (s[i] == c)
 			i++;
-		j = i;
-		while (s[i] != '\0' && s[i] != c)
+		if (s[i] != '\0')
+			counter++;
+		while (s[i] && s[i] != c)
 			i++;
-		if (i > j)
-			(res[k] = ft_strndup(s + j, i - j)) && (k++);
 	}
-	res[k] = NULL;
-	return (res);
+	return (counter);
 }
